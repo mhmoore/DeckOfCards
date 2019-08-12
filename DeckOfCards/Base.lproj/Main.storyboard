@@ -27,6 +27,9 @@
                                 <state key="normal" title="Draw A Card">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <action selector="drawButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="djn-EN-P46"/>
+                                </connections>
                             </button>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="39" translatesAutoresizingMaskIntoConstraints="NO" id="x9j-Lz-ACs">
                                 <rect key="frame" x="186" y="106" width="42" height="80"/>
@@ -60,6 +63,11 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="cardImageView" destination="du1-Ml-XaR" id="ghA-fu-1aY"/>
+                        <outlet property="suitLabel" destination="LMr-aE-Rkl" id="FlB-jb-cTv"/>
+                        <outlet property="valueLabel" destination="FwC-Zh-WI2" id="HE8-7d-emB"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>

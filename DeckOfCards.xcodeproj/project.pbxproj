@@ -8,20 +8,20 @@
 
 /* Begin PBXBuildFile section */
 		A52098232301CD6A0016C2F1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A52098222301CD6A0016C2F1 /* AppDelegate.swift */; };
-		A52098252301CD6A0016C2F1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A52098242301CD6A0016C2F1 /* ViewController.swift */; };
 		A52098282301CD6A0016C2F1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A52098262301CD6A0016C2F1 /* Main.storyboard */; };
 		A520982A2301CD6B0016C2F1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A52098292301CD6B0016C2F1 /* Assets.xcassets */; };
 		A520982D2301CD6B0016C2F1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A520982B2301CD6B0016C2F1 /* LaunchScreen.storyboard */; };
+		A520983C2301D2570016C2F1 /* DrawCardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A520983B2301D2570016C2F1 /* DrawCardViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		A520981F2301CD6A0016C2F1 /* DeckOfCards.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DeckOfCards.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A52098222301CD6A0016C2F1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		A52098242301CD6A0016C2F1 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		A52098272301CD6A0016C2F1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		A52098292301CD6B0016C2F1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A520982C2301CD6B0016C2F1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A520982E2301CD6B0016C2F1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A520983B2301D2570016C2F1 /* DrawCardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawCardViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -38,6 +38,7 @@
 		A52098162301CD6A0016C2F1 = {
 			isa = PBXGroup;
 			children = (
+				A520983B2301D2570016C2F1 /* DrawCardViewController.swift */,
 				A52098212301CD6A0016C2F1 /* DeckOfCards */,
 				A52098202301CD6A0016C2F1 /* Products */,
 			);
@@ -54,14 +55,45 @@
 		A52098212301CD6A0016C2F1 /* DeckOfCards */ = {
 			isa = PBXGroup;
 			children = (
-				A52098222301CD6A0016C2F1 /* AppDelegate.swift */,
-				A52098242301CD6A0016C2F1 /* ViewController.swift */,
+				A52098382301D1F10016C2F1 /* View Controller */,
+				A52098372301D1E70016C2F1 /* Model Controller */,
+				A52098362301D1E00016C2F1 /* Model */,
+				A52098352301D1D80016C2F1 /* Resources */,
 				A52098262301CD6A0016C2F1 /* Main.storyboard */,
+			);
+			path = DeckOfCards;
+			sourceTree = "<group>";
+		};
+		A52098352301D1D80016C2F1 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				A52098222301CD6A0016C2F1 /* AppDelegate.swift */,
 				A52098292301CD6B0016C2F1 /* Assets.xcassets */,
 				A520982B2301CD6B0016C2F1 /* LaunchScreen.storyboard */,
 				A520982E2301CD6B0016C2F1 /* Info.plist */,
 			);
-			path = DeckOfCards;
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		A52098362301D1E00016C2F1 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		A52098372301D1E70016C2F1 /* Model Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "Model Controller";
+			sourceTree = "<group>";
+		};
+		A52098382301D1F10016C2F1 /* View Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "View Controller";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -135,7 +167,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A52098252301CD6A0016C2F1 /* ViewController.swift in Sources */,
+				A520983C2301D2570016C2F1 /* DrawCardViewController.swift in Sources */,
 				A52098232301CD6A0016C2F1 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -284,7 +316,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 5H77479UZ4;
-				INFOPLIST_FILE = DeckOfCards/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/DeckOfCards/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -302,7 +334,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 5H77479UZ4;
-				INFOPLIST_FILE = DeckOfCards/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/DeckOfCards/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
